@@ -1,0 +1,99 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  color: #333;
+  text-align: center;
+}
+
+.container {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 10px;
+  width: 350px;
+  max-width: 100%;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #4CAF50;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 10px;
+}
+
+#weather-form {
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:disabled {
+  background-color: #bbb;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: red;
+  font-size: 16px;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.weather {
+  margin-top: 20px;
+}
+
+.weather h1,
+.weather h2 {
+  font-size: 1.3rem;
+  margin: 5px 0;
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: 90%;
+  }
+
+  input[type="text"], button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
